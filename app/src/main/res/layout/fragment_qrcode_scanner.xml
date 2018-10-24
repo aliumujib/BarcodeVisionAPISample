@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:id="@+id/relativeLayout"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:keepScreenOn="true">
+
+
+    <com.aliumujib.visionapisample.codescanner.camera.CameraSourcePreview
+            android:id="@+id/preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="567dp"
+            tools:layout_conversion_absoluteWidth="384dp">
+
+        <com.aliumujib.visionapisample.codescanner.camera.GraphicOverlay
+                android:id="@+id/graphicOverlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_conversion_absoluteHeight="567dp"
+                tools:layout_conversion_absoluteWidth="837dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp"/>
+
+    </com.aliumujib.visionapisample.codescanner.camera.CameraSourcePreview>
+
+
+    <!-- Scanner overlay animation -->
+    <com.aliumujib.visionapisample.codescanner.ScannerOverlay
+            android:id="@+id/scannerOverlay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparentBg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:line_color="@color/colorAccent"
+            app:line_speed="6"
+            app:line_width="4"
+            app:square_height="220"
+            app:square_width="220"/>
+
+    <ImageView
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            app:layout_constraintBottom_toBottomOf="@+id/scannerOverlay2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/preview"
+            tools:layout_conversion_absoluteHeight="260dp"
+            tools:layout_conversion_absoluteWidth="260dp"/>
+
+
+    <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/white"
+            android:text="CANCEL"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+</android.support.constraint.ConstraintLayout>

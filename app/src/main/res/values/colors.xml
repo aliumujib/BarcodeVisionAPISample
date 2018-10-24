@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="transparentBg">#80F8FBFC</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="scanner_line">#00ceff</color>
+
+    <!--shimmer-->
+
+
+    <color name="black">#000000</color>
+
+
+</resources>
